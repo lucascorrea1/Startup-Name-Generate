@@ -2,16 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
-//o app se torna um widget extendendo StatelessWidget
 class MyApp extends StatelessWidget { 
   const MyApp({Key? key}) : super(key: key);
 
@@ -21,11 +17,11 @@ class MyApp extends StatelessWidget {
         title: 'Startup Name Generator',
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.indigo,
             foregroundColor: Colors.black,
           ),
         ),
-        home: RandomWords(),
+        home: const RandomWords(),
       );
   }
 }//ok
